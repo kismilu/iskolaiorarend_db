@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<meta http-equiv="content-type" content="text/html; charset=UTF8" >
+</HEAD>
+<BODY style="margin-left: 3%">
+
+<p style="text-align: right; margin-right: 3%"> <b> Száva Mihály Demeter <br> Órarend adatbázis lekérdezései <br> 2018. november </b></p>
+
+<br><br>
+<table style="border:1px solid; width:80%;">
+<tr>
+	<td>
+
+	<p style="margin-left:10px;"><b>Tárgyak felvitele</b><p>
+	<table style="margin-left:10px;">
+	<form method="POST" action="felvitel.php" accept-charset="utf-8">
+	<tr>
+	<td>Tárgy neve: </td>
+	<td><input type="text" name="nev" /></td>
+	</tr>
+	<tr>
+	<td>Tárgy id:</td>
+	<td><input type="text" name="tantargy_id" /></td>
+	</tr>
+	<tr>
+	<td>Heti óraszám </td>
+	<td><input type="text" name="heti_oraszam" /></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td><input type="submit" value="Elküld" /></td>
+	</tr>
+	</table>
+	</form>
+
+	</td>
+	<td>
+	
+	<p><b>Tárgyak törlése</b><p>
+	<table>
+	<form method="POST" action="torles.php" accept-charset="utf-8">
+	<tr>
+	<td>Tárgy neve: </td>
+	<td><input type="text" name="nev" /></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td><input type="submit" value="Elküld" /></td>
+	</tr>
+	</table>
+	</form>
+	
+	</td>
+	
+	<td>
+	<p><b> Tárgyak módosítása </b><p>
+	<table>
+	<form method="POST" action="modosit.php" accept-charset="utf-8">
+		<tr style="text-align:center;">
+			<td>Módosítandó neve: </td>
+			<td>Új név:</td>
+		</tr>
+		<tr>
+			<td><input type="text" name="nev" /></td>
+			
+			<td>--><input type="text" name="modosit" /></td>
+			<td><input type="submit" value="Elküld" /></td>
+		</tr>
+		
+		<tr style="text-align:center;">
+			<td>Módosítandó id: </td>
+			<td>Új id:</td>
+		</tr>
+		<tr>
+			<td><input type="text" name="id" /></td>
+			
+			<td>--><input type="text" name="modositid" /></td>
+			<td><input type="submit" value="Elküld" /></td>
+		</tr>
+		
+		</table>
+	</form>
+
+	
+	
+	
+	</td>
+
+</tr>
+<tr> 
+
+	<td>
+	<p style="margin-left:10px;"><b>Osztályok felvitele</b></p>
+	<form method="POST" action="felvitel.php" accept-charset="utf-8">
+	<table style="margin-left:10px; margin-bottom:20px;">
+	<tr>
+	<td>Osztály id: </td>
+	<td><input type="text" name="osztaly_id" /></td>
+	</tr>
+	<tr>
+	<td>Létszám:</td>
+	<td><input type="text" name="letszam" /></td>
+	</tr>
+	<tr>
+	<td>Osztályfőnök id </td>
+	<td><input type="text" name="ped_id" /></td>
+	</tr>
+	<tr>
+	<td>Osztályfőnök neve </td>
+	<td><input type="text" name="ped_nev" /></td>
+	</tr>
+	<tr>
+	<td>Osztályfőnök lakcíme </td>
+	<td><input type="text" name="lakcim" /></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td><input type="submit" value="Elküld" /></td>
+	</tr>
+	</table>
+	</form>
+	
+	</td>
+	
+	<td>
+	
+	<p><b>Osztály törlése</b><p>
+	<form method="POST" action="torles.php" accept-charset="utf-8">
+	<table>
+	<tr>
+	<td>Osztály id: </td>
+	<td><input type="text" name="osztaly_nev" /></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td><input type="submit" value="Elküld" /></td>
+	</tr>
+	</table>
+	</form>
+	
+	</td>
+	
+	<td>
+	
+	<p><b>Osztály módosítása</b><p>
+	<table>
+	<form method="POST" action="modosit.php" accept-charset="utf-8">
+		<tr style="text-align:center;">
+			<td>Módosítandó id-je: </td>
+			<td>Új létszám:</td>
+		</tr>
+		<tr>
+			<td><input type="text" name="idl" /></td>
+			
+			<td>--><input type="text" name="letszam" /></td>
+			<td><input type="submit" value="Elküld" /></td>
+		</tr>
+		
+		<tr style="text-align:center;">
+			<td>Módosítandó id: </td>
+			<td>Új id:</td>
+		</tr>
+		<tr>
+			<td><input type="text" name="idoszt" /></td>
+			
+			<td>--><input type="text" name="modositidoszt" /></td>
+			<td><input type="submit" value="Elküld" /></td>
+		</tr>
+		
+		</table>
+	</form>
+	
+	</td>
+
+</tr>
+</table>
+
+<br>
+<form method="get" action="tablak.php">
+	<button type="submit"> Táblák</button>
+</form>
+
+<br>
+<form method="get" action="lekerdezesek.php">
+    <button type="submit"> Lekérdezések</button>
+</form>
+
+</BODY>
+</HTML>
